@@ -10,9 +10,13 @@ Install the required tools before running:
 ```bash
 # Arch / Manjaro
 sudo pacman -S nmap tcpdump wireshark-qt
+```
 
-# nProbe + ntopng (install once)
-yay -S ntopng nprobe
+nProbe and ntopng are not available in the AUR. Use Docker instead:
+
+```bash
+docker pull ntop/nprobe
+docker pull ntop/ntopng
 ```
 
 ---
@@ -35,13 +39,19 @@ The script will:
 
 ## Step 2 — Start nProbe (Terminal 2)
 
-While the script is running, open a second terminal:
+While the script is running, open a second terminal.
 
+Replace `<IFACE>` with your interface (e.g. `wlp2s0`, `eth0`). The script prints the exact command for your machine.
+
+**If installed natively:**
 ```bash
 sudo nprobe --interface <IFACE> --ntopng zmq://127.0.0.1:5556 -b 0
 ```
 
-Replace `<IFACE>` with your interface (e.g. `wlp2s0`, `eth0`). The script prints the exact command for your machine.
+**Via Docker:**
+```bash
+docker run -it --net=host ntop/nprobe --interface <IFACE> --ntopng zmq://127.0.0.1:5556 -b 0
+```
 
 ---
 
@@ -49,8 +59,14 @@ Replace `<IFACE>` with your interface (e.g. `wlp2s0`, `eth0`). The script prints
 
 Open a third terminal:
 
+**If installed natively:**
 ```bash
 sudo ntopng -i zmq://127.0.0.1:5556 -d ./home/ntopng_data
+```
+
+**Via Docker:**
+```bash
+docker run -it --net=host -p 3000:3000 ntop/ntopng -i zmq://127.0.0.1:5556
 ```
 
 Then open **http://localhost:3000** in your browser.
