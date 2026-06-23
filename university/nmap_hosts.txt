@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Tue Jun 23 19:43:01 2026 as: nmap -sn -oN /home/hoffmann-g/projects/pucrs/rca/t2-rca/university/nmap_hosts.txt -oX /home/hoffmann-g/projects/pucrs/rca/t2-rca/university/nmap_hosts.xml 10.132.240.0/20
+Nmap scan report for 10.132.240.8
+Host is up (0.058s latency).
+MAC Address: 00:1C:7F:81:08:35 (Check Point Software Technologies)
+Nmap scan report for 10.132.240.10
+Host is up (0.0077s latency).
+MAC Address: C4:F7:D5:C7:AA:CD (Cisco Systems)
+Nmap scan report for 10.132.242.95
+Host is up.
+# Nmap done at Tue Jun 23 19:43:15 2026 -- 4096 IP addresses (3 hosts up) scanned in 14.21 seconds

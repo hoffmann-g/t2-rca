@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Tue Jun 23 19:43:01 2026 as: nmap -sn -oN /home/hoffmann-g/projects/pucrs/rca/t2-rca/university/nmap_hosts.txt -oX /home/hoffmann-g/projects/pucrs/rca/t2-rca/university/nmap_hosts.xml 10.132.240.0/20 -->
+<nmaprun scanner="nmap" args="nmap -sn -oN /home/hoffmann-g/projects/pucrs/rca/t2-rca/university/nmap_hosts.txt -oX /home/hoffmann-g/projects/pucrs/rca/t2-rca/university/nmap_hosts.xml 10.132.240.0/20" start="1782254581" startstr="Tue Jun 23 19:43:01 2026" version="7.99" xmloutputversion="1.05">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.132.240.8" addrtype="ipv4"/>
+<address addr="00:1C:7F:81:08:35" addrtype="mac" vendor="Check Point Software Technologies"/>
+<hostnames>
+</hostnames>
+<times srtt="57964" rttvar="57964" to="289820"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.132.240.10" addrtype="ipv4"/>
+<address addr="C4:F7:D5:C7:AA:CD" addrtype="mac" vendor="Cisco Systems"/>
+<hostnames>
+</hostnames>
+<times srtt="7725" rttvar="5904" to="100000"/>
+</host>
+<host><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="10.132.242.95" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</host>
+<runstats><finished time="1782254595" timestr="Tue Jun 23 19:43:15 2026" summary="Nmap done at Tue Jun 23 19:43:15 2026; 4096 IP addresses (3 hosts up) scanned in 14.21 seconds" elapsed="14.21" exit="success"/><hosts up="3" down="4093" total="4096"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,8 @@
+Environment : university
+Hostname    : hoffmann-ottonelli
+Interface   : wlp2s0
+IP          : 10.132.242.95/20
+MAC         : a8:e2:91:9f:88:2b
+Gateway     : 10.132.240.8
+Network     : 10.132.240.0/20
+Timestamp   : 2026-06-23 19:43:01

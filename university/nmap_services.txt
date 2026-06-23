@@ -1,0 +1,35 @@
+# Nmap 7.99 scan initiated Tue Jun 23 19:43:15 2026 as: nmap -sV -O --osscan-guess -T4 --open -oN /home/hoffmann-g/projects/pucrs/rca/t2-rca/university/nmap_services.txt -oX /home/hoffmann-g/projects/pucrs/rca/t2-rca/university/nmap_services.xml 10.132.240.8 10.132.240.10 10.132.242.95
+Nmap scan report for 10.132.240.8
+Host is up (0.0047s latency).
+Not shown: 995 filtered tcp ports (no-response), 2 closed tcp ports (reset)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE      VERSION
+80/tcp  open  http         Check Point NGX Firewall-1
+264/tcp open  fw1-topology Check Point FireWall-1 Topology
+443/tcp open  ssl/https?
+MAC Address: 00:1C:7F:81:08:35 (Check Point Software Technologies)
+Device type: general purpose
+Running (JUST GUESSING): OpenBSD 7.X (87%)
+OS CPE: cpe:/o:openbsd:openbsd:7.0
+Aggressive OS guesses: OpenBSD 7.0 (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: Device: firewall
+
+Nmap scan report for 10.132.240.10
+Host is up (0.0033s latency).
+Not shown: 994 filtered tcp ports (no-response), 2 closed tcp ports (reset)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE     VERSION
+22/tcp    open  tcpwrapped
+80/tcp    open  http        Cisco Wireless LAN Controller httpd
+443/tcp   open  ssl/http    Cisco Wireless LAN Controller httpd
+16113/tcp open  ssl/unknown
+MAC Address: C4:F7:D5:C7:AA:CD (Cisco Systems)
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+No OS matches for host
+Network Distance: 1 hop
+Service Info: Device: remote management; CPE: cpe:/o:cisco:wireless_lan_controller_software
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jun 23 19:45:58 2026 -- 3 IP addresses (3 hosts up) scanned in 162.31 seconds
