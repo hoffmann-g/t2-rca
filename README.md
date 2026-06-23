@@ -12,10 +12,13 @@ Install the required tools before running:
 sudo pacman -S nmap tcpdump wireshark-qt
 ```
 
-nProbe and ntopng are not available in the AUR. Use Docker instead:
+nProbe requires a paid license. Use **softflowd** instead (same function, open source) + ntopng via Docker:
 
 ```bash
-docker pull ntop/nprobe
+# softflowd — NetFlow probe (replaces nProbe)
+yay -S softflowd
+
+# ntopng — via Docker
 docker pull ntop/ntopng
 ```
 
@@ -37,36 +40,22 @@ The script will:
 
 ---
 
-## Step 2 — Start nProbe (Terminal 2)
+## Step 2 — Start softflowd (Terminal 2)
 
-While the script is running, open a second terminal.
+softflowd replaces nProbe: it captures traffic and exports NetFlow to ntopng.
 
 Replace `<IFACE>` with your interface (e.g. `wlp2s0`, `eth0`). The script prints the exact command for your machine.
 
-**If installed natively:**
 ```bash
-sudo nprobe --interface <IFACE> --ntopng zmq://127.0.0.1:5556 -b 0
-```
-
-**Via Docker:**
-```bash
-docker run -it --net=host ntop/nprobe --interface <IFACE> --ntopng zmq://127.0.0.1:5556 -b 0
+sudo softflowd -i <IFACE> -n 127.0.0.1:2055 -v 9 -t maxlife=60
 ```
 
 ---
 
 ## Step 3 — Start ntopng (Terminal 3)
 
-Open a third terminal:
-
-**If installed natively:**
 ```bash
-sudo ntopng -i zmq://127.0.0.1:5556 -d ./home/ntopng_data
-```
-
-**Via Docker:**
-```bash
-docker run -it --net=host -p 3000:3000 ntop/ntopng -i zmq://127.0.0.1:5556
+docker run -it --net=host -p 3000:3000 ntop/ntopng -i 0.0.0.0:2055
 ```
 
 Then open **http://localhost:3000** in your browser.
