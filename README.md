@@ -55,8 +55,10 @@ sudo softflowd -i <IFACE> -n 127.0.0.1:2055 -v 9 -t maxlife=60
 ## Step 3 — Start ntopng (Terminal 3)
 
 ```bash
-docker run -it --net=host -p 3000:3000 ntop/ntopng -i 0.0.0.0:2055
+docker run -it --net=host --privileged ntop/ntopng -i <IFACE>
 ```
+
+Replace `<IFACE>` with your interface (e.g. `wlp2s0`, `eth0`).
 
 Then open **http://localhost:3000** in your browser.
 Default login: `admin` / `admin`
