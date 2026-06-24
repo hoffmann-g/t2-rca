@@ -1,0 +1,8 @@
+Environment : home
+Hostname    : cassol-joao
+Interface   : wlan0
+IP          : 192.168.0.224/24
+MAC         : f4:6a:dd:58:6e:ed
+Gateway     : 192.168.0.1
+Network     : 192.168.0.0/24
+Timestamp   : 2026-06-23 21:14:14

@@ -1,0 +1,166 @@
+# Nmap 7.99 scan initiated Tue Jun 23 21:14:19 2026 as: nmap -sV -O --osscan-guess -T4 --open -oN /home/guicassol/redesAvancadas/home/nmap_services.txt -oX /home/guicassol/redesAvancadas/home/nmap_services.xml 192.168.0.1 192.168.0.2 192.168.0.3 192.168.0.6 192.168.0.23 192.168.0.28 192.168.0.150 192.168.0.224
+Nmap scan report for 192.168.0.1 (192.168.0.1)
+Host is up (0.0022s latency).
+Not shown: 995 closed tcp ports (reset), 1 filtered tcp port (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE   VERSION
+53/tcp    open  domain    Microsoft DNS 6.0.6100 (2AEF76E)
+80/tcp    open  http
+443/tcp   open  ssl/https
+52869/tcp open  upnp      Portable SDK for UPnP devices 1.6.22 (UPnP 1.0)
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port53-TCP:V=7.99%I=7%D=6/23%Time=6A3B216B%P=x86_64-pc-linux-gnu%r(DNSV
+SF:ersionBindReqTCP,4D,"\0K\0\x06\x85\0\0\x01\0\x01\0\0\0\0\x07version\x04
+SF:bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03\0\0\0\0\0!\x20Microsoft\x20DNS\x
+SF:206\.0\.6100\x20\(2AEF76E\)");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.99%I=7%D=6/23%Time=6A3B2166%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,4FA,"HTTP/1\.0\x20302\x20Moved\x20Temporarily\r\nConnection:\x20
+SF:close\r\nCache-Control:\x20no-cache,no-store\r\nPragma:\x20no-cache\r\n
+SF:Content-Length:\x20793\r\nSet-Cookie:\x20SID=cc4454a9ff7c6a49b86a6768ae
+SF:76a63f8a54558b755df0616ce9341a18cc71fd;\x20PATH=/;\x20HttpOnly;\x20Same
+SF:Site=strict\r\nServer:\x20\r\nAccept-Ranges:\x20bytes\r\nX-Content-Type
+SF:-Options:\x20nosniff\r\nX-XSS-Protection:\x201;\x20mode=block\r\nConten
+SF:t-Security-Policy:\x20frame-ancestors\x20'self'\x20\r\nX-Frame-Options:
+SF:\x20SAMEORIGIN\r\nLocation:\x20https:///\r\nContent-Type:\x20text/html;
+SF:\x20charset=Utf-8\r\n\r\n\n<html>\n<head>\n<title>302\x20Found</title>\
+SF:n</head>\n<body\x20bgcolor=\"#FFFFFF\"\x20text=\"#000000\"\x20link=\"#2
+SF:020ff\"\x20vlink=\"#4040cc\">\n<h2>302\x20Found</h2>\n<span>The\x20requ
+SF:ested\x20URL\x20is\x20going\x20to\x20be\x20https\.</span>\n<div\x20styl
+SF:e=\"display:none\">\n<span>Padding\x20so\x20that\x20MSIE\x20deigns\x20t
+SF:o\x20show\x20this\x20error\x20instead\x20of\x20its\x20own\x20canned\x20
+SF:one\.</span>\n<span>Padding\x20so\x20that\x20MSIE\x20deigns\x20to\x20sh
+SF:ow\x20this\x20error\x20instead\x20of\x20its\x20own\x20canned\x20one\.</
+SF:span>\n<span>Padding\x20so\x20th")%r(HTTPOptions,5C7,"HTTP/1\.1\x20400\
+SF:x20Bad\x20Request\r\nConnection:\x20close\r\nContent-Type:\x20text/html
+SF:;\x20charset=iso-8859-1\r\nX-Content-Type-Options:\x20nosniff\r\nX-XSS-
+SF:Protection:\x201;\x20mode=block\r\nX-Frame-Options:\x20SAMEORIGIN\r\nCo
+SF:ntent-Security-Policy:\x20frame-ancestors\x20'self';\x20\r\nCache-Contr
+SF:ol:\x20no-cache,no-store\r\nPragma:\x20no-cache\r\n\r\n\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<html>\n\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<head><title>400\x
+SF:20Bad\x20Request</title></head>\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20<body\x20bgcolor=\"#FFFFFF\"\x20text=\"#000
+SF:000\"\x20link=\"#2020ff\"\x20vlink=\"#4040cc\">\n\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>400\x20Bad\x20Request</
+SF:h2>\nYour\x20request\x20has\x20bad\x20syntax\x20or\x20is\x20inherently\
+SF:x20impossible\x20to\x20satisfy\.\n<div\x20style=\"display:none\">\n<aja
+SF:x_response_xml_root>\n<IF_ERRORSTR>SessionTimeout</IF_ERRORSTR>\n<IF_ER
+SF:RORPARAM>SUCC</IF_ERRORPARAM>\n<IF_ERRORTYPE>SUCC</IF_ERRORTYPE>\n</aja
+SF:x_response_xml_roo");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.99%T=SSL%I=7%D=6/23%Time=6A3B2169%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,4223,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nC
+SF:ache-Control:\x20no-cache,no-store\r\nPragma:\x20no-cache\r\nContent-Le
+SF:ngth:\x20130274\r\nSet-Cookie:\x20SID_HTTPS_=37af30c3c0bed3be5f1298fbf3
+SF:9075a59d9f40abd5edfa72042960a0be8cb1c7;\x20PATH=/;\x20Secure;\x20HttpOn
+SF:ly;\x20SameSite=strict\r\nSet-Cookie:\x20_TESTCOOKIESUPPORT_HTTPS_=1;\x
+SF:20PATH=/;\x20Secure;\x20HttpOnly;\x20SameSite=strict\r\nServer:\x20\r\n
+SF:Accept-Ranges:\x20bytes\r\nX-Content-Type-Options:\x20nosniff\r\nX-XSS-
+SF:Protection:\x201;\x20mode=block\r\nContent-Security-Policy:\x20frame-an
+SF:cestors\x20'self'\x20\r\nX-Frame-Options:\x20SAMEORIGIN\r\nContent-Type
+SF::\x20text/html;\x20charset=Utf-8\r\n\r\n<!DOCTYPE\x20html>\n<html>\n<he
+SF:ad>\n<meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;\x20ch
+SF:arset=Utf-8\"\x20/>\n<meta\x20name=\"viewport\"\x20content=\"width=devi
+SF:ce-width,\x20initial-scale=1\.0\">\n<meta\x20http-equiv=\"X-UA-Compatib
+SF:le\"\x20content=\"IE=edge,chrome=1\">\n<link\x20rel=\"shortcut\x20icon\
+SF:"\x20href=\"/img/favicon\.ico\"\x20/>\n<title>&#70;&#54;&#54;&#48;&#48;
+SF:&#80;</title>\n<link\x20rel=\"styleshee")%r(FourOhFourRequest,5BA,"HTTP
+SF:/1\.0\x20404\x20Not\x20Found\r\nConnection:\x20close\r\nContent-Type:\x
+SF:20text/html;\x20charset=iso-8859-1\r\nX-Content-Type-Options:\x20nosnif
+SF:f\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Frame-Options:\x20SAMEO
+SF:RIGIN\r\nContent-Security-Policy:\x20frame-ancestors\x20'self';\x20\r\n
+SF:Cache-Control:\x20no-cache,no-store\r\nPragma:\x20no-cache\r\n\r\n\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<html>\n\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<head><
+SF:title>404\x20Not\x20Found</title></head>\n\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20<body\x20bgcolor=\"#FFFFFF\"\x20te
+SF:xt=\"#000000\"\x20link=\"#2020ff\"\x20vlink=\"#4040cc\">\n\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>404\x20Not\x20
+SF:Found</h2>\n<span>The\x20requested\x20URL\x20was\x20not\x20found\x20on\
+SF:x20this\x20server\.</span>\n<div\x20style=\"display:none\">\n<ajax_resp
+SF:onse_xml_root>\n<IF_ERRORSTR>SessionTimeout</IF_ERRORSTR>\n<IF_ERRORPAR
+SF:AM>SUCC</IF_ERRORPARAM>\n<IF_ERRORTYPE>SUCC</IF_ERRORTYPE>\n</ajax_resp
+SF:onse_xml_root>\n<span>Padd");
+MAC Address: D8:31:39:97:F5:C8 (zte)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.14
+Network Distance: 1 hop
+Service Info: OSs: Windows, Linux; CPE: cpe:/o:microsoft:windows, cpe:/o:linux:linux_kernel
+
+Nmap scan report for 192.168.0.3 (192.168.0.3)
+Host is up (0.0043s latency).
+Not shown: 998 closed tcp ports (reset), 1 filtered tcp port (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx
+MAC Address: 9C:D2:1E:76:11:71 (Hon Hai Precision Ind.)
+Device type: media device
+Running: Sony embedded
+OS details: Sony Bravia W600-, W800-, or W900-series TV
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.28 (192.168.0.28)
+Host is up (0.0053s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT      STATE SERVICE    VERSION
+49152/tcp open  tcpwrapped
+62078/tcp open  tcpwrapped
+MAC Address: 32:ED:DF:35:5D:56 (Unknown)
+Device type: phone
+Running: Apple iOS 15.X
+OS CPE: cpe:/o:apple:iphone_os:15
+OS details: Apple iOS 15.0 - 15.6 (Darwin 21.1.0 - 21.6.0)
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.150 (192.168.0.150)
+Host is up (0.0023s latency).
+Not shown: 999 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE       VERSION
+3389/tcp open  ms-wbt-server
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.99%I=7%D=6/23%Time=6A3B216B%P=x86_64-pc-linux-gnu%r(Te
+SF:rminalServerCookie,13,"\x03\0\0\x13\x0e\xd0\0\0\x124\0\x02/\x08\0\x02\0
+SF:\0\0");
+MAC Address: A8:A1:59:E9:C9:F3 (ASRock Incorporation)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Microsoft Windows 10|11
+OS CPE: cpe:/o:microsoft:windows_10 cpe:/o:microsoft:windows_11
+OS details: Microsoft Windows 10 - 11
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.0.224 (192.168.0.224)
+Host is up (0.000077s latency).
+Not shown: 998 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE VERSION
+3000/tcp open  http    Mongoose httpd
+8080/tcp open  http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 5.0 - 6.2 (96%), Linux 6.17 (95%), Linux 5.8 (92%), HP P2000 G3 NAS device (92%), Linux 3.7 - 4.19 (91%), Linux 2.6.32 (91%), Linux 6.8 (90%), Linux 3.8 - 3.9 (90%), Linux 4.1 (90%), Linux 4.10 (90%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 0 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jun 23 21:14:58 2026 -- 8 IP addresses (8 hosts up) scanned in 39.12 seconds

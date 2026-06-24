@@ -1,0 +1,25 @@
+# Nmap 7.99 scan initiated Tue Jun 23 21:14:14 2026 as: nmap -sn -oN /home/guicassol/redesAvancadas/home/nmap_hosts.txt -oX /home/guicassol/redesAvancadas/home/nmap_hosts.xml 192.168.0.0/24
+Nmap scan report for 192.168.0.1 (192.168.0.1)
+Host is up (0.023s latency).
+MAC Address: D8:31:39:97:F5:C8 (zte)
+Nmap scan report for 192.168.0.2 (192.168.0.2)
+Host is up (0.023s latency).
+MAC Address: E4:4E:12:93:BF:A7 (zte)
+Nmap scan report for 192.168.0.3 (192.168.0.3)
+Host is up (0.024s latency).
+MAC Address: 9C:D2:1E:76:11:71 (Hon Hai Precision Ind.)
+Nmap scan report for 192.168.0.6 (192.168.0.6)
+Host is up (0.11s latency).
+MAC Address: FC:64:3A:54:4E:EA (Samsung Electronics)
+Nmap scan report for 192.168.0.23 (192.168.0.23)
+Host is up (0.0031s latency).
+MAC Address: 60:5B:B4:83:B6:49 (AzureWave Technology)
+Nmap scan report for 192.168.0.28 (192.168.0.28)
+Host is up (0.11s latency).
+MAC Address: 32:ED:DF:35:5D:56 (Unknown)
+Nmap scan report for 192.168.0.150 (192.168.0.150)
+Host is up (0.0019s latency).
+MAC Address: A8:A1:59:E9:C9:F3 (ASRock Incorporation)
+Nmap scan report for 192.168.0.224 (192.168.0.224)
+Host is up.
+# Nmap done at Tue Jun 23 21:14:19 2026 -- 256 IP addresses (8 hosts up) scanned in 4.56 seconds

@@ -1,0 +1,17 @@
+# Capturas de tráfego — dados sensíveis (compartilhar à parte, não versionar)
+*.pcap
+*.pcapng
+
+# Arquivos pesados / redundantes
+entrega_home.tar.gz
+*.tar.gz
+
+# Pastas de trabalho do collect.sh (root-owned, dados já curados em entrega_*/)
+home/
+university/
+
+# Fotos originais soltas (as selecionadas já estão em entrega_home/)
+photos/
+
+# Dados do ntopng
+ntopng_data/
